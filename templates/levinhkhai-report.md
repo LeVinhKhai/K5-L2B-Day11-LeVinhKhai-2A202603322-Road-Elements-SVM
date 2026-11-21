@@ -13,6 +13,7 @@ Số lần nộp lại sau Rework: 0
 | 6 label, đúng kiểu | Có — đã đối chiếu cấu hình và hai ZIP cuối | `lane`, `road_curb`: polyline; `crosswalk`, `drivable`: polygon; `traffic_light`, `traffic_sign`: rectangle. Export có đủ 6 label và đúng kiểu shape. |
 | Thuộc tính và giá trị | Có — khớp Road v1.0 | `lane`: position = L1/R1/L2/R2/other, style = solid/dashed, color = white/yellow/other, kind = single/double; `drivable`: area_type = direct/alternative; `traffic_light`: color = red/yellow/green/off/unknown, type = vehicle/pedestrian/beacon, facing = front/side/back, edge_zone = true/false; `traffic_sign`: group = prohibitory/mandatory/warning/information/supplementary/other, facing = front/side/back, edge_zone = true/false. `road_curb` và `crosswalk` không có thuộc tính; `occluded` là cờ có sẵn của CVAT. |
 | 4 tag ảnh | Có — XML xác nhận đủ trên 20/20 ảnh | `camera`: front/fisheye_front/fisheye_rear/fisheye_left/fisheye_right; `timeofday`: day/dusk/night; `weather`: clear/overcast/rain/fog/other; `source`: real/simulated. Mỗi tag có một thuộc tính select tên `value`. |
+
 Cách kết thúc polyline trên bản CVAT này: Nhấn phím N sau khi đặt các điểm điều khiển từ gần xe ra xa.  
 Cách đặt tag ảnh trên bản CVAT này: Chọn công cụ Tag trên thanh công cụ bên trái, chọn label tương ứng và tạo tag. Sau đó kiểm tra và điều chỉnh thuộc tính value trong bảng Objects. Thực hiện lần lượt camera, timeofday, weather và source..  
 
